@@ -1,1 +1,11 @@
 #+TITLE: Sorcery - A D&D (Dark and Dusty) Emacs Theme.
+
+Sorcery is a dark and low-contrast Emacs theme inspired by [[https://github.com/romainl/Apprentice][apprentice]] and [[https://github.com/xero/sourcerer][sourcerer]].
+
+* Installation
+
+Installation is manual for now. Sorcery will be added to MELPA in the future.
+
+* Screenshot
+
+[[file:img/scr.png]]

@@ -2,7 +2,7 @@
 
 (autothemer-deftheme
  sorcery
- "A sword-and-sorcery theme inspired by Apprentice."
+ "Sorcery - A D&D (Dark and Dusty) Emacs Theme."
 
  ((((class color) (min-colors #xFFFFFF)))
   (fg "#dddddd")
