@@ -147,8 +147,8 @@
   (change-log-name           (:foreground fg :background bg))
 
   ;; Comint
-  (comint-highlight-input  (:foreground c4 :background bg :weight 'bold))
-  (comint-highlight-prompt (:foreground c4 :background bg :weight 'bold))
+  (comint-highlight-input  (:foreground fg :background bg :weight 'bold))
+  (comint-highlight-prompt (:foreground fg :background bg :weight 'bold))
 
   ;; Minibuffer completions
   (completions-annotations      (:foreground fg :background bg))
