@@ -1,3 +1,9 @@
+;;; sorcery-theme.el --- A D&D (Dark and Dusty) Emacs Theme.
+
+;; Copyright (c) 2020 Maxime Tréca
+
+;; Package-Requires: ((autothemer "0.2"))
+
 (require 'autothemer)
 
 (autothemer-deftheme
@@ -864,3 +870,5 @@
   (sh-quoted-exec     (:foreground c7 :background bg))))
 
 (provide-theme 'sorcery)
+
+;;; sorcery-theme.el ends here
