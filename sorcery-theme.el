@@ -1,14 +1,25 @@
-;;; sorcery-theme.el --- A D&D (Dark and Dusty) Emacs Theme.
+;;; sorcery-theme.el --- A D&D (Dark and Dusty) Theme -*- lexical-binding: t; -*-
 
 ;; Copyright (c) 2020 Maxime Tréca
 
+;; Author: Maxime Tréca <maxime@gmail.com>
+;; Version: 1.0
 ;; Package-Requires: ((autothemer "0.2"))
+;; URL: http://github.com/vxid/emacs-theme-sorcery
 
+;;; Commentary:
+
+;; A dark and low-contrast Emacs theme.
+
+;;; Code:
 (require 'autothemer)
 
+
+(unless (>= emacs-major-version 24)
+  (error "Requires Emacs 24 or later"))
+
 (autothemer-deftheme
- sorcery
- "Sorcery - A D&D (Dark and Dusty) Emacs Theme."
+ sorcery "Sorcery - A D&D (Dark and Dusty) Emacs Theme."
 
  ((((class color) (min-colors #xFFFFFF)))
   (fg "#dddddd")
@@ -41,7 +52,7 @@
   (minibuffer-prompt          (:foreground fg :slant 'italic))
   (read-multiple-choice       (:foreground fg :slant 'italic))
   (region                     (:background c8))
-  (secondary-selection        (:background c6))
+  (secondary-selection        (:background c8))
   (shadow                     (:foreground c7))
   (success                    (:foreground c2))
   (warning                    (:foreground c3))
@@ -869,6 +880,6 @@
   (sh-heredoc         (:foreground c7 :background bg))
   (sh-quoted-exec     (:foreground c7 :background bg))))
 
-(provide-theme 'sorcery)
+(provide 'sorcery-theme)
 
 ;;; sorcery-theme.el ends here
