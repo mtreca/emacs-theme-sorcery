@@ -1,19 +1,34 @@
 ;;; sorcery-theme.el --- A D&D (Dark and Dusty) Theme -*- lexical-binding: t; -*-
 
-;; Copyright (c) 2020 Maxime Tréca
+;; Copyright (c) 2020 Free Software Foundation, Inc.
 
 ;; Author: Maxime Tréca <maxime@gmail.com>
 ;; Version: 1.0
 ;; Package-Requires: ((autothemer "0.2"))
 ;; URL: http://github.com/vxid/emacs-theme-sorcery
 
+;; This file is NOT part of GNU Emacs.
+
+;; This program is free software; you can redistribute it and/or
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+;;
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 ;;; Commentary:
 
 ;; A dark and low-contrast Emacs theme.
 
 ;;; Code:
-(require 'autothemer)
 
+(require 'autothemer)
 
 (unless (>= emacs-major-version 24)
   (error "Requires Emacs 24 or later"))
@@ -879,6 +894,8 @@
   (sh-escaped-newline (:foreground c7 :background bg))
   (sh-heredoc         (:foreground c7 :background bg))
   (sh-quoted-exec     (:foreground c7 :background bg))))
+
+(provide-theme 'sorcery)
 
 (provide 'sorcery-theme)
 
