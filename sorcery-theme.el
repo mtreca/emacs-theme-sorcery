@@ -79,10 +79,10 @@
   (scroll-bar                 (:foreground c0 :background bg))
   (tool-bar                   (:foreground c0 :background bg))
   (tooltip                    (:foreground c0 :background bg))
-  (vertical-border            (:foreground c0 :background bg))
-  (window-divider             (:foreground c0 :background bg))
-  (window-divider-first-pixel (:foreground c0 :background bg))
-  (window-divider-last-pixel  (:foreground c0 :background bg))
+  (vertical-border            (:foreground c8 :background bg))
+  (window-divider             (:foreground c8 :background bg))
+  (window-divider-first-pixel (:foreground c8 :background bg))
+  (window-divider-last-pixel  (:foreground c8 :background bg))
 
   ;; Header line and mode line
   (header-line                (:foreground fg :background c0))
@@ -702,6 +702,10 @@
   (transient-unreachable-key          (:foreground c7 :strike-though t))
   (transient-value                    (:foreground fg))
 
+  ;; Mini Modeline
+  (mini-modeline-mode-line          (:height 0.1 :background c8))
+  (mini-modeline-mode-line-inactive (:height 0.1 :background c8))
+
   ;; mu4e
   (mu4e-attach-number               (:foreground c5 :slant 'italic))
   (mu4e-cited-1-face                (:foreground c7))
@@ -893,10 +897,13 @@
   ;; Shell
   (sh-escaped-newline (:foreground c7 :background bg))
   (sh-heredoc         (:foreground c7 :background bg))
-  (sh-quoted-exec     (:foreground c7 :background bg))))
+  (sh-quoted-exec     (:foreground c7 :background bg)))
+
+  (custom-theme-set-variables 'sorcery
+                              `(pdf-view-midnight-colors '(,fg . ,bg))))
+
 
 (provide-theme 'sorcery)
-
 (provide 'sorcery-theme)
 
 ;;; sorcery-theme.el ends here
