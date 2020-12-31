@@ -864,6 +864,22 @@
   (vterm-color-cyan     (:foreground c6))
   (vterm-color-white    (:foreground fg))
 
+  ;; git-gutter
+  (git-gutter:added       (:background c2))
+  (git-gutter:deleted     (:background c1))
+  (git-gutter:modified    (:background c3))
+  (git-gutter:unchanged   (:background bg))
+  (git-gutter:separator   (:background c0))
+  (git-gutter-fr:added    (:background c2))
+  (git-gutter-fr:deleted  (:background c1))
+  (git-gutter-fr:modified (:background c3))
+
+  ;; company
+  (company-tooltip-selection (:foreground fg :background c7))
+  (company-tooltip-common (:foreground fg))
+  (company-tooltip (:foreground fg :background c0))
+  (company-scrollbar-bg (:background bg))
+  (company-scrollbar-fg (:background c8))
 
 
   ;;; Language-specific
