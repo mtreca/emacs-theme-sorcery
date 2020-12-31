@@ -47,7 +47,8 @@
   (c5 "#5f5f87")
   (c6 "#5Fafaf")
   (c7 "#666666")
-  (c8 "#222222")) (
+  (c8 "#222222")
+  (c9 "#999999")) (
 
   ;;; Face weights
   (bold                       (:weight 'bold))
@@ -133,7 +134,7 @@
   (font-lock-preprocessor-face               (:foreground fg))
   (font-lock-regexp-grouping-backslash       (:foreground fg))
   (font-lock-regexp-grouping-construct-face  (:foreground fg))
-  (font-lock-string-face                     (:foreground c7))
+  (font-lock-string-face                     (:foreground c9))
   (font-lock-reference-face                  (:foreground fg))
   (font-lock-type-face                       (:foreground fg))
   (font-lock-variable-name-face              (:foreground fg))
