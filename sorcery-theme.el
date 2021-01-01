@@ -90,16 +90,16 @@
   ;; Header line and mode line
   (header-line                (:foreground fg :background c0))
   (header-line-highlight      (:foreground fg :background c0))
-  (mode-line                  (:foreground fg :background c0))
+  (mode-line                  (:foreground fg :background c0 :box (:line-width 1 :color "#444444")))
   (mode-line-buffer-id        (:foreground fg :background c0))
   (mode-line-emphasis         (:foreground c4 :background c0))
   (mode-line-highlight        (:foreground c4 :background c0))
-  (mode-line-inactive         (:foreground fg :background c0))
+  (mode-line-inactive         (:foreground fg :background c0 :box (:line-width 1 :color c8)))
 
   ;; Other UI elements
   (button                     (:foreground fg :background bg :box t))
   (cursor                     (:background fg :background bg))
-  (link                       (:foreground c5 :underline t))
+  (link                       (:foreground c4 :underline t))
   (link-visited               (:foreground c5 :underline t))
   (mouse                      (:foreground fg :background bg))
   (mouse-drag-and-drop-region (:foreground fg :background c8))
@@ -351,7 +351,7 @@
   (help-argument-name (:slant 'italic))
 
   ;; Hl-line
-  (hl-line (:background c0))
+  (hl-line (:background c11))
 
   ;; Ibuffer
   (ibuffer-locked-buffer (:foreground c1))
